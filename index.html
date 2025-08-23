@@ -6,20 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
 </head>
 
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+        </script>
     <header>
-        <div class="container">
-            <p>SaciTech</p>
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#sobreaequipe">Sobre a equipe</a>
-                <a href="#skills/stacks">Skills</a>
-                <a href="#projetos/trabalhos">Projetos</a>
-                <a href="#contato">Contato</a>
-            </nav>
-        </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark rounded-pill p-4">
+            <div class="container-fluid">
+                <a class="navbar-brand">SaciTech</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobreaequipe">Sobre a equipe</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#stack">Stack</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
 
@@ -35,52 +60,77 @@
             </div>
             <img src="images/saci-logo.png" alt="SaciTech-logo" class="logo">
             <video autoplay loop class="video-background">
-                <source src="https://videos.pexels.com/video-files/3130182/3130182-uhd_2560_1440_30fps.mp4" type="video/mp4">
+                <source src="https://videos.pexels.com/video-files/3130182/3130182-uhd_2560_1440_30fps.mp4"
+                    type="video/mp4">
             </video>
 
         </section>
 
         <section id="sobreaequipe">
-            <p>Sobre a equipe</p>
-            <img src="https://media.licdn.com/dms/image/v2/D4E03AQGZyXS3UPKeeQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1729255392970?e=1758758400&v=beta&t=SY1Ue2W-bukH1My1iE1Qkpxr-STg4QMJiQtdityCnNM"
-                alt="Foto de Thiago">
-            <img src="https://media.licdn.com/dms/image/v2/D4D03AQEs5HWKnB3_GQ/profile-displayphoto-shrink_200_200/B4DZPfZ_NGGkAY-/0/1734619954470?e=1758758400&v=beta&t=Es5DFsF99uOq35VixTNnA1e8ufQxb2CYmkj4naDsOf0"
-                alt="Foto de Kauan">
-            <img src="https://media.licdn.com/dms/image/v2/D4E03AQHNdkoG-ycOWA/profile-displayphoto-shrink_200_200/B4EZUjRSMuHcAg-/0/1740053489250?e=1758758400&v=beta&t=OVU-03gmBMj_Z_dcu--MwsZmsq2CKVMVeaF1migdYW8"
-                alt="Foto de Icaro">
-            <img src="https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?cs=srgb&dl=pexels-pixabay-158826.jpg&fm=jpg" alt="background-sobre" class="background-sobre">
-
+            <h2>Sobre a equipe</h2>
+            <div class="sobre-container">
+                <h3>
+                    TEXTO GENERICOTEXTO GENERICOTEXTO GENERICOTEXTO GENERICO
+                    TEXTO GENERICOTEXTO GENERICOTEXTO GENERICOTEXTO GENERICO
+                    TEXTO GENERICOTEXTO GENERICOTEXTO GENERICOTEXTO GENERICO
+                    TEXTO GENERICOTEXTO GENERICOTEXTO GENERICOTEXTO GENERICO
+                    TEXTO GENERICOTEXTO GENERICOTEXTO GENERICOTEXTO GENERICO
+                    TEXTO GENERICOTEXTO GENERICOTEXTO GENERICOTEXTO GENERICO
+                </h3>
+                <div class="cards">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQGZyXS3UPKeeQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1729255392970?e=1758758400&v=beta&t=SY1Ue2W-bukH1My1iE1Qkpxr-STg4QMJiQtdityCnNM"
+                            class="card-img-top" alt="Foto de Thiago">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of
+                                the card’s content.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEs5HWKnB3_GQ/profile-displayphoto-shrink_200_200/B4DZPfZ_NGGkAY-/0/1734619954470?e=1758758400&v=beta&t=Es5DFsF99uOq35VixTNnA1e8ufQxb2CYmkj4naDsOf0"
+                            class="card-img-top" alt="foto de Kauan">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of
+                                the card’s content.</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQHNdkoG-ycOWA/profile-displayphoto-shrink_200_200/B4EZUjRSMuHcAg-/0/1740053489250?e=1758758400&v=beta&t=OVU-03gmBMj_Z_dcu--MwsZmsq2CKVMVeaF1migdYW8"
+                            class="card-img-top" alt="Foto de Icaro">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk of
+                                the card’s content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="https://wallpapercave.com/wp/wp2100746.jpg" alt="" class="video-background">
+            
         </section>
 
-        <section section id="skills/stacks">
-            <p>Skills</p>
-            <div class="stack-card">
-                JAVA
-                <img src="" alt="">
+        <section section id="stack">
+            <h2>Skills</h2>
+            <div class="stack-grid">
+                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png" alt="Java">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/036/044/336/small_2x/sql-database-icon-logo-design-ui-or-ux-app-png.png" alt="Sql">
+                <img src="https://logos-world.net/wp-content/uploads/2020/09/Oracle-Symbol.png" alt="Oracle">
+                <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="JavaScript">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" alt="Angular">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Python">
+                <img src="https://cdn-icons-png.flaticon.com/512/919/919833.png" alt="Swift">
+                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png" alt="Docker">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-csharp-icon-svg-png-download-1175240.png" alt="C#">
             </div>
-            <div class="stack-card">
-                SQL
-                <img src="" alt="">
-            </div>
-            <div class="stack-card">
-                JavaScript
-                <img src="" alt="">
-            </div>
-            <div class="stack-card">
-                TypeScript
-                <img src="" alt="">
-            </div>
-            <div class="stack-card">
-                Angular
-                <img src="" alt="">
-            </div>
-            <div class="stack-card">
-                Python
-                <img src="" alt="">
-            </div>
+            <video autoplay loop class="video-background">
+                <source src="https://videos.pexels.com/video-files/15196744/15196744-uhd_2560_1440_30fps.mp4"
+                    type="video/mp4">
+            </video>
         </section>
 
-        <section id="projetos/trabalhos">
+        <section id="projetos">
             <p>Projetos</p>
         </section>
 
