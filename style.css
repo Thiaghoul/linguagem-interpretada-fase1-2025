@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 1% 10%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    min-width: 80%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Rubik one';
+    height: 6vh;
+    align-items: center;
+    border: 1px solid rgb(196, 8, 8);
+    box-shadow: 0 10px 15px rgb(90, 64, 64);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.container p {
+    color: white
+}
+
+.main-info,
+.sub-info {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Rubik one';
+    font-size: 6vh;
+
+}
+
+.sub-info {
+    font-size: 2vh;
+}
+
+nav {
+    display: flex;
+    gap: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover,
+a:active {
+    color: #7a0000;
+    font-size: larger;
+}
+
+section {
+    scroll-margin-top: 6vh;
+}
+
+.logo {
+    max-height: 60vh;
+    padding: 3%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+}
+
+#home {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100vh;
+}
+
+.info {
+    padding: 5%;
+}
+
+#home div .sub-info {
+    padding-top: 1px;
+}
+
+
+.video-background {
+    position: absolute;
+    z-index: -1;
+}
+
+#sobreaequipe {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100vh;
+}
+
+.background-sobre {
+    position: absolute;
+    z-index: -1;
+    object-fit: contain;
+}
