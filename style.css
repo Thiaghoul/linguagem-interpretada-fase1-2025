@@ -12,6 +12,8 @@ header {
 }
 
 
+
+
 .container p {
     color: white
 }
@@ -51,7 +53,7 @@ section {
 footer {
     display: flex;
     justify-content: space-between;
-    background-color: blue;
+    background-color: rgb(255, 94, 94);
 }
 
 #home {
@@ -80,50 +82,109 @@ footer {
 #sobreaequipe {
     position: relative;
     overflow: hidden;
-    display: flex;
     gap: 10%;
-    align-items: flex-start;
-    flex-direction: column;
     max-width: 100%;
     height: 100%;
+    background: url("https://wallpapercave.com/wp/wp2100746.jpg") center/cover no-repeat;
+    padding: 5vh;
+    color: white;
 }
 
-.sobre-container{
-    display: flex;
-    flex-direction: row;
+#sobreaequipe .card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    color: white;
 }
 
-.cards {
+#sobreaequipe .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+#sobreaequipe .card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto 10px auto;
+    display: block;
+}
+
+#sobreaequipe .card .btn {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    padding: 5px 10px;
+    color: white;
+}
+
+#sobreaequipe .row{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+hr {
+    color: white;
+    border: 0;
+    border-top-width: 0px;
+    border-top-style: none;
+    border-top-color: currentcolor;
+    border-top: var(--bs-border-width) solid;
+    opacity: .25;
+}
+
+#stack {
+    position: relative;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    min-height: 80vh;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    padding: 5vh;
+}
+
+#stack .video-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
 }
 
 .stack-grid {
+    align-self: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 80px; 
+    gap: 80px;
     width: 80%;
     max-width: 1000px;
     padding: 20px;
+    margin: 100px 0px;
 }
 
 .stack-grid img {
-    width: 100%; 
-    height: 200px; 
+    width: 100%;
+    height: 200px;
     object-fit: contain;
-    background-color: #a5a5a5; 
+    background-color: #a5a5a5;
     opacity: 0.4;
     border-radius: 12px;
     padding: 15px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     transition: all 0.3s ease-in-out;
 }
 
 .stack-grid img:hover {
     background-color: white;
     opacity: 1;
-    transform: scale(1.05) translateY(-5px); 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
-
