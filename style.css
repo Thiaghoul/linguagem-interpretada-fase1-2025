@@ -193,8 +193,11 @@ hr {
 
 
 #contato {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background: linear-gradient(135deg, #1A0A0A, #2A1616);
-    padding: 50px 20px;
+    padding: 50px 20px 15vh 20px;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
 }
@@ -277,6 +280,80 @@ button[type="submit"] {
 button[type="submit"]:hover {
     transform: scale(1.02);
     box-shadow: 0 0 15px rgba(233, 30, 99, 0.6);
+}
+
+#id{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.container-projetos{
+    height: 50vh !important;
+    display: flex;
+    justify-content: center;
+}
+
+.card-a{
+    user-select: contain;
+    display: block;
+    background: #2A1616;
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.card-lista .card{
+    list-style: none;
+}
+
+.card-lista .card-a .card-img{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-lista .card-a .card-grid-tag{
+    display: flex;
+    gap: 10px;
+}
+
+.card-lista .card-a .card-grid-tag .tec{
+    color: green;
+    padding: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: rgba(100, 136, 111, 0.5);
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-lista .card-a .card-titulo{
+    font-size: 1.30rem;
+    width: fit-content;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.card-lista .card-a .card-texto{
+    font-size: 1rem;
+    color: #a5a5a5;
+    font-weight: 400;
+}
+
+#voltar-ao-topo{
+    position: fixed;
+    bottom: 20px; 
+    right: -500px;
+    margin: 5vh;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-color: #E91E63;
+    border-radius: 5px;
+    font-weight: 600;
 }
 
 

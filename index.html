@@ -7,12 +7,11 @@
     <title>landing page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <!-- CSS do Swiper -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
-        </script>
     <header>
 
 
@@ -26,9 +25,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#sobreaequipe">Sobre a equipe</a>
                         </li>
@@ -161,6 +157,60 @@
 
             </div>
 
+        <!-- Seção de Projetos -->
+        <section id="projetos">
+
+            <!--Container geral da secao (aplicando o swiper)-->
+            <div class="container-projetos">
+                <!-- Container dos cards -->
+                <div class="card-container swiper">
+                    <!--lista com os cards-->
+                    <div class="card-lista swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <a href="#" class="card-a">
+                                <img src="images/java-api.jpg" alt="java-api" class="card-img">
+                                <div class="card-grid-tag">
+                                    <p class="tec">Java</p>
+                                    <p class="tec">SQL</p>
+                                </div>
+                                <h2 class="card-titulo">Java API</h2>
+                                <span class="card-texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, architecto? Repudiandae, modi optio. Aliquam nam nulla quam dicta ullam, doloremque provident quibusdam asperiores saepe velit, natus exercitationem dignissimos, neque illo.</span>
+                            </a>
+                        </div>
+                        <div class="card swiper-slide">
+                            <a href="#" class="card-a">
+                                <img src="images/sis-hospital.jpg" alt="java-api" class="card-img">
+                                <div class="card-grid-tag">
+                                    <p class="tec">SpringBoot</p>
+                                    <p class="tec">Angular</p>
+                                    <p class="tec">SQL</p>
+                                </div>
+                                <h2 class="card-titulo">Sistema Farmaceutico</h2>
+                                <span class="card-texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, architecto? Repudiandae, modi optio. Aliquam nam nulla quam dicta ullam, doloremque provident quibusdam asperiores saepe velit, natus exercitationem dignissimos, neque illo.</span>
+                            </a>
+                        </div>
+                        <div class="card swiper-slide">
+                            <a href="#" class="card-a">
+                                <img src="images/sis-hotel.jpg" alt="java-api" class="card-img">
+                                <div class="card-grid-tag">
+                                    <p class="tec">Swift</p>
+                                    <p class="tec">SwiftUI</p>
+                                </div>
+                                <h2 class="card-titulo">Sistema de Hotel</h2>
+                                <span class="card-texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, architecto? Repudiandae, modi optio. Aliquam nam nulla quam dicta ullam, doloremque provident quibusdam asperiores saepe velit, natus exercitationem dignissimos, neque illo.</span>
+                            </a>
+                        </div>
+                    </div>        
+
+                <!-- paginacao e botoes do swiper -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+        </section>
+        
         </section>
 
         <section section id="stack">
@@ -189,31 +239,37 @@
             </video>
         </section>
 
-        <section id="projetos">
-            <p>Projetos</p>
-        </section>
-
         <section id="contato">
             <h2>Fale <span>Comigo!</span></h2>
-            <form>
+            <form id="formulario">
             <div class="caixa-input">
-                <input type="text" placeholder="Nome Completo" required>
-                <input type="text" placeholder="E-mail" required>
+                <input id="nome" type="text" placeholder="Nome Completo">
+                <input id="email" type="text" placeholder="E-mail">
             </div>
             <div class="caixa-input">
-                <input type="tel" placeholder="Telefone" required>
-                <input type="text" placeholder="Assunto" required>
+                <input id="telefone"type="tel" placeholder="Telefone">
+                <input id="assunto" type="text" placeholder="Assunto">
             </div>
-            <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
-            <button type="submit"> Enviar mensagem</button>
+            <textarea id="mensagem" placeholder="Sua mensagem"></textarea>
+            <button id="enviar" type="submit"> Enviar mensagem</button>
+            <div class="alertas"></div>
             </form>
+            
         </section>
-
+        
     </main>
+
     <footer>
         <div>© 2025 SaciTech. All rights reserved.</div>
         <div>Version 1.0.2</div>
+
+        <button onclick="voltarTopo()" id="voltar-ao-topo">Voltar ao topo</button>
     </footer>
+    
+    <!-- JS do Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"> </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
