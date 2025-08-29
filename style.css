@@ -102,7 +102,7 @@ footer {
 }
 
 #sobreaequipe .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -317,7 +317,7 @@ button[type="submit"]:hover {
 
 .card-lista .card-a .card-grid-tag{
     display: flex;
-    gap: 10px;
+    gap: px;
 }
 
 .card-lista .card-a .card-grid-tag .tec{
@@ -370,3 +370,4 @@ button[type="submit"]:hover {
         font-size: 2em;
     }
 }
+
