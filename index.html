@@ -66,7 +66,7 @@
                 Somos uma equipe dedicada. Nosso objetivo é entregar projetos com qualidade,
                 inovação e trabalho em equipe.
             </p>
-            <div class="row g-5 justify-content-center">
+            <div class="container-sobre row g-5 justify-content-center">
                 <div class="col-md-3">
                     <div class="card h-100">
                         <img src="https://media.licdn.com/dms/image/v2/D4D03AQEs5HWKnB3_GQ/profile-displayphoto-shrink_200_200/B4DZPfZ_NGGkAY-/0/1734619954470?e=1758758400&v=beta&t=Es5DFsF99uOq35VixTNnA1e8ufQxb2CYmkj4naDsOf0"
@@ -120,40 +120,40 @@
             <hr>
 
             <div class="container py-5">
-                <div class="row align-items-center mb-5">
+                <div class="faixa row align-items-center mb-5">
                     <div class="col-md-6">
                         <h3 class="fw-bold text-white">Graduação na UNIFACISA</h3>
                         <h4 class="text-white-50">Somos graduandos na UNIFACISA, onde temos desenvolvido uma base sólida
                             em tecnologia e projetos práticos, sempre buscando alinhar teoria e aplicação real.</h4>
                     </div>
-                    <div class="col-md-6 text-md-end">
+                    <div class="img col-md-6 text-md-end">
                         <img src="https://sindojuspb.org/new2017/wp-content/uploads/2022/05/unifasicalogo.png"
                             class="rounded img-fluid w-50" alt="Imagem 1">
                     </div>
                 </div>
                 <hr>
 
-                <div class="row align-items-center mb-5">
+                <div class="faixa row align-items-center mb-5">
                     <div class="col-md-6 order-md-2">
                         <h3 class="fw-bold text-white">Participação no HACKATRUCK</h3>
                         <h4 class="text-white-50">Tivemos a oportunidade de participar do HackaTruck, onde aprendemos
                             sobre
                             inovação, desenvolvimento mobile e trabalho em equipe em um ambiente dinâmico.</h4>
                     </div>
-                    <div class="col-md-6 order-md-1 text-md-start">
+                    <div class="img-dois col-md-6 order-md-1 text-md-start">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAWNtNcSWBpooHj2vf_XvDXGMI5HQemG3FDA&s"
                             class="rounded img-fluid w-50" alt="Imagem 2">
                     </div>
                 </div>
                 <hr>
 
-                <div class="row align-items-center mb-5">
+                <div class="faixa row align-items-center mb-5">
                     <div class="col-md-6">
                         <h3 class="fw-bold text-white">Certificações UDEMY</h3>
                         <h4 class="text-white-50">Buscamos constantemente evoluir através de cursos online na Udemy,
                             conquistando certificações em programação, frameworks modernos e boas práticas de desenvolvimento.</h4>
                     </div>
-                    <div class="col-md-6 text-md-end">
+                    <div class="img col-md-6 text-md-end">
                         <img src="https://play-lh.googleusercontent.com/oDuTGEHru1KMr3QOfQfPKgIdNnlq3WWQxpBYND23r2a7RVnS1HW0t7dyON86Vn_QhtM"
                             class="rounded img-fluid w-50" alt="Imagem 3">
                     </div>
@@ -163,14 +163,16 @@
             <!-- Seção de Projetos -->
             <section id="projetos">
 
+
+                <h2 class="fw-bold text-white text-center">Nossos Projetos</h2>
                 <!--Container geral da secao (aplicando o swiper)-->
-                <div class="container-projetos">
+                <div class="container-projetos row align-items-center">
                     <!-- Container dos cards -->
-                    <div class="card-container swiper">
+                    <div class="card-container swiper col-md-6">
                         <!--lista com os cards-->
                         <div class="card-lista swiper-wrapper">
                             <div class="card swiper-slide">
-                                <a href="#" class="card-a">
+                                <a href="#projetos" class="card-a">
                                     <img src="images/java-api.jpg" alt="java-api" class="card-img">
                                     <div class="card-grid-tag">
                                         <p class="tec">Java</p>
@@ -214,10 +216,9 @@
                             </div>
                         </div>
 
-                        <!-- paginacao e botoes do swiper -->
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <!-- botoes do swiper -->
+                        <div class="botao-swiper swiper-button-prev"></div>
+                        <div class="botao-swiper swiper-button-next"></div>
                     </div>
                 </div>
 
@@ -226,7 +227,9 @@
         </section>
 
         <section section id="stack">
-            <h2>Stack</h2>
+            <div class="titulo-stack">
+                <h2>Stack</h2>
+            </div>
             <div class="stack-grid">
                 <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png"
                     alt="Java">

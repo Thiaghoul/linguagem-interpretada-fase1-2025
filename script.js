@@ -13,17 +13,6 @@ const swiper = new Swiper(".swiper", {
     prevEl: '.swiper-button-prev',
   },
 
-  breakpoints: {
-    0: {
-        slidesPerView: 1
-    },
-    768: {
-        slidesPerView: 1
-    },
-    1024: {
-        slidesPerView: 1
-    },
-  }
 });
 
 window.onscroll = scroll;
@@ -107,3 +96,16 @@ function addFeedback(msg, cor) {
 
     container.appendChild(p);
 }
+
+function aplicarMobile(mobile){
+    if (mobile.matches){
+        let containerSobre = document.querySelector(".container-sobre");
+
+        containerSobre.classList.add("d-flex flex-column align-items-center");
+    }
+}
+
+let mobile = window.matchMedia("(max-width: 1020px)");
+aplicarMobile(mobile);
+
+mobile.addEventListener("change", aplicarMobile);
