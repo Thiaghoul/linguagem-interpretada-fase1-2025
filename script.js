@@ -19,8 +19,8 @@ window.onscroll = scroll;
 function scroll(){
     var btn = document.getElementById("voltar-ao-topo")
 
-    if(document.documentElement.scrollTop > 200){
-        btn.style.right = "50px"
+    if(document.documentElement.scrollTop > 200 || document.body.scrollTop > 200){
+        btn.style.right = "0px"
         btn.style.transition = ".4s all"
     } else {
         btn.style.right = "-500px"
@@ -99,9 +99,9 @@ function addFeedback(msg, cor) {
 
 function aplicarMobile(mobile){
     if (mobile.matches){
-        let containerSobre = document.querySelector(".container-sobre");
+        let containerLink = document.querySelector(".link-sobre")
 
-        containerSobre.classList.add("d-flex flex-column align-items-center");
+        containerLink.classList.add("nav-link", "pt-5");
     }
 }
 
