@@ -11,9 +11,6 @@ header {
     min-width: 80%;
 }
 
-
-
-
 .container p {
     color: white
 }
@@ -123,7 +120,7 @@ footer {
 }
 
 #sobreaequipe .row{
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 
@@ -412,7 +409,7 @@ button[type="submit"]:hover {
     }
 
     #projetos{
-        height: 70vh;
+        height: 100vh;
     }
 
 

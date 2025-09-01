@@ -105,7 +105,7 @@ function aplicarMobile(mobile){
     }
 }
 
-let mobile = window.matchMedia("(max-width: 1020px)");
+let mobile = window.matchMedia("(max-width: 700px)");
 aplicarMobile(mobile);
 
 mobile.addEventListener("change", aplicarMobile);
