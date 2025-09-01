@@ -120,7 +120,6 @@ footer {
 }
 
 #sobreaequipe .row{
-    margin-top: 50px;
     margin-bottom: 100px;
 }
 
@@ -361,6 +360,7 @@ button[type="submit"]:hover {
     border-color: #E91E63;
     border-radius: 5px;
     font-weight: 600;
+    z-index: 1;
 }
 
 .botao-swiper{
