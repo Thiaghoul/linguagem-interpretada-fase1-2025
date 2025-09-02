@@ -99,6 +99,7 @@ footer {
     color: white;
     padding-left: 8vh;
     padding-right: 8vh;
+    padding-bottom: 8vh;
 }
 
 #sobreaequipe .card {
@@ -167,6 +168,7 @@ hr {
     object-fit: cover; 
     z-index: -1; 
 }
+
 
 .stack-grid {
     align-self: center;
@@ -419,6 +421,18 @@ button[type="submit"]:hover {
         text-align: center;
     }
 
+    /* --- CORREÇÃO 2: PADDING E MARGENS PARA MOBILE --- */
+    /* Aqui ajustamos o padding da seção #stack e os espaçamentos da grade (.stack-grid)
+       especificamente para telas menores, garantindo que o conteúdo tenha espaço para respirar. */
 
-
+    #stack {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .stack-grid {
+        gap: 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 }
