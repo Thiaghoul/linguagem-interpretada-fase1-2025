@@ -63,6 +63,8 @@ footer {
     display: flex;
     justify-content: space-between;
     background-color: rgb(255, 94, 94);
+    padding: 15px 20px; /* Adicionado um padding para melhorar a aparência */
+    align-items: center;
 }
 
 #home {
@@ -94,7 +96,6 @@ footer {
     position: relative;
     overflow: hidden;
     max-width: 100%;
-    height: 100%;
     background: url("https://wallpapercave.com/wp/wp2100746.jpg") center/cover no-repeat;
     color: white;
     padding-left: 8vh;
@@ -140,9 +141,6 @@ footer {
 hr {
     color: white;
     border: 0;
-    border-top-width: 0px;
-    border-top-style: none;
-    border-top-color: currentcolor;
     border-top: var(--bs-border-width) solid;
     opacity: .25;
 }
@@ -168,7 +166,6 @@ hr {
     object-fit: cover; 
     z-index: -1; 
 }
-
 
 .stack-grid {
     align-self: center;
@@ -200,8 +197,6 @@ hr {
     cursor: pointer;
 }
 
-
-
 #contato {
     display: flex;
     align-items: center;
@@ -224,7 +219,7 @@ hr {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: transparent; /* Fallback */
+    color: transparent;
 }
 
 
@@ -272,7 +267,6 @@ input:focus, textarea:focus {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-
 button[type="submit"] {
     display: block;
     width: 100%;
@@ -301,16 +295,10 @@ button[type="submit"]:hover {
     font-size: 35px;
 }
 
-#id{
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
 .container-projetos{
-    height: 50vh !important;
     display: flex;
     justify-content: center;
+    padding-bottom: 50px; 
 }
 
 .card-a{
@@ -380,7 +368,61 @@ button[type="submit"]:hover {
     color:#1A0A0A
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 992px) {
+    header {
+        margin: 1% 5%;
+        min-width: 90%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem; 
+    }
+    
+    section {
+        padding-top: 9vh; 
+    }
+    
+    #home .main-info {
+        font-size: 5vh; 
+    }
+
+    #home .sub-info {
+        font-size: 1.8vh; 
+    }
+
+    #sobreaequipe {
+        padding-left: 20px;  
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
+
+    #sobreaequipe .row {
+        margin-bottom: 50px; 
+    }
+
+    .faixa h3 {
+        font-size: 1.5rem;
+    }
+
+    .faixa h4 {
+        font-size: 1rem;
+    }
+    
+    #stack {
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+    
+    .stack-grid {
+        gap: 20px; 
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
     #contato form {
         padding: 25px;
     }
@@ -388,19 +430,19 @@ button[type="submit"]:hover {
         flex-direction: column;
         gap: 15px;
     }
-    #contato h2 {
+    .h2-contato, #contato h2 {
         font-size: 2em;
     }
-}
 
-@media screen and (max-width: 760px) {
     #home{
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: center; 
     }
 
     #home img{
         width: 50%;
+        max-height: 40vh; 
     }
 
     .container-sobre{
@@ -409,30 +451,17 @@ button[type="submit"]:hover {
 
     .faixa{
         flex-direction: column-reverse;
-        gap: 50px;
+        gap: 30px; 
+        margin-bottom: 40px !important; 
+        text-align: center; 
     }
 
-    .faixa .img{
+    .faixa .img, .faixa .img-dois {
         text-align: center;
         width: 100%;  
     }
 
-    .faixa .img-dois{
-        text-align: center;
-    }
-
-    /* --- CORREÇÃO 2: PADDING E MARGENS PARA MOBILE --- */
-    /* Aqui ajustamos o padding da seção #stack e os espaçamentos da grade (.stack-grid)
-       especificamente para telas menores, garantindo que o conteúdo tenha espaço para respirar. */
-
-    #stack {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
-    .stack-grid {
-        gap: 20px;
-        margin-top: 40px;
-        margin-bottom: 40px;
+    .faixa .img img, .faixa .img-dois img {
+        width: 60%; 
     }
 }
