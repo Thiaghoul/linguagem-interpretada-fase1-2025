@@ -171,11 +171,10 @@ hr {
 .stack-grid {
     align-self: center;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
-    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px; 
+    width: 90%; 
     max-width: 1000px;
-    padding: 20px;
     margin: 100px 0px;
 }
 
